@@ -28,8 +28,9 @@ print_r($r);
 
 ### 反馈 &改进
 #### Issue
-如果有什么问题或建议，或者发现有识别的缺陷，依然可以
-提交[Github Issue](https://github.com/pupuk/address/issues)
+如果有什么问题或建议，或者发现有不能识别，或者识别错误的地址，
+提交到[Github Issue](https://github.com/pupuk/address/issues)
+我会继续改进维护代码
 
 #### 协作
                 
