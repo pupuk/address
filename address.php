@@ -41,7 +41,7 @@ class Address
 
         $string = preg_replace('/\s{1,}/', ' ', $string);
 
-        $string = preg_replace('/0?(\d{3})-(\d{4})-(\d{4})/', '$1$2$3', $string);
+        $string = preg_replace('/0?(\d{3})-(\d{4})-(\d{4})([-_]\d{1,})/', '$1$2$3$4', $string);
 
         preg_match('/\d{18}|\d{17}X/i', $string, $match);
         if ($match && $match[0]) {
