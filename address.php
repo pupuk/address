@@ -41,7 +41,7 @@ class Address
 
         $string = preg_replace('/\s{1,}/', ' ', $string);
 
-        $string = preg_replace('/0-|0?(\d{3})-(\d{4})-(\d{4})/', '$1$2$3', $string);
+        $string = preg_replace('/0?(\d{3})-(\d{4})-(\d{4})/', '$1$2$3', $string);
 
         preg_match('/\d{18}|\d{17}X/i', $string, $match);
         if ($match && $match[0]) {
@@ -49,7 +49,7 @@ class Address
             $string = str_replace($match[0], '', $string);
         }
 
-        preg_match('/\d{7,11}|\d{3,4}-\d{6,8}/', $string, $match);
+        preg_match('/\d{7,11}[\-_]\d{2,6}|\d{7,11}|\d{3,4}-\d{6,8}/', $string, $match);
         if ($match && $match[0]) {
             $compose['mobile'] = $match[0];
             $string = str_replace($match[0], '', $string);
