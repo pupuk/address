@@ -29,6 +29,8 @@ print_r($r);
 ```php
  Address::smart($string, $user = false);
 ```
+### Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=pupuk/address&type=Date)](https://star-history.com/#pupuk/address&Date)
 
 ### 反馈 &改进
 #### Issue
